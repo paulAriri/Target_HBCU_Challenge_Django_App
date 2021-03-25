@@ -1,0 +1,52 @@
+
+*{
+    font-family: Cursive, "Helvetica";
+    font-weight: bold;
+    font-size: 15px;
+}
+.budget_trivia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-image: url(../images/target.png);
+    width: 500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.budget_trivia a{
+    text-decoration: none;
+}
+.trivia{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 7px;
+    width: 180px;
+    margin-bottom: 27px;
+    background: #DD0000;
+    border: 3px solid #FFFFFF;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+.budget{
+    color: #DD0000;
+    text-align: center;
+    padding: 7px;
+    width: 180px;
+    background: #FFFFFF;
+    border: 3px solid #DD0000;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}

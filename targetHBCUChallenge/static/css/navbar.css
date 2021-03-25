@@ -1,0 +1,14 @@
+
+*{
+    font-family: Cursive;
+    font-weight: bold;
+}
+.navbar-custom {
+    background-color: #DD0000;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .navbar-toggler,
+.navbar-custom .navbar-text {
+    color: white;
+}

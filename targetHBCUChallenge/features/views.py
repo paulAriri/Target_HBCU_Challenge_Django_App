@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    return HttpResponse('Home Page')
+    return render(request, 'features/home.html')
 
 def trivia(request):
     return HttpResponse('Trivia Page')

@@ -1,0 +1,24 @@
+{% extends 'features/main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <!--CSS Styles for Home Page-->
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+
+    <!--Content-->
+    <div class="budget_trivia">
+        <a href="#">
+            <div class="trivia">
+                TARGET TRIVIA
+            </div>
+        </a>
+        <a href="#">
+            <div class="budget">
+                TARGET BUDGET
+            </div>
+        </a>
+    </div>
+
+{% endblock %}
