@@ -1,0 +1,161 @@
+{% extends 'features/main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="{% static '/css/budgetlist.css' %}" />
+    <div class="page">
+        <div class="column1">
+            <h1 class="target-budget">Target Budget</h1>
+            <div class="budget-list">
+                <a href="{% url 'budget' %}"> Set a new budget</a>
+                <!-- <button class="shopping-list"> Create a new shopping list </button> -->
+            </div>
+
+            <!-- shopping list card -->
+            <div id="card">
+                <div class="icon">
+                    <h2 class="untitled">Untitled 1</h2>
+                    <img src="{% static '/images/arrow.png' %}" alt="" class="arrow">
+                </div>
+
+                <div class="sub-text">
+                    <div>
+                        <h5>Access List</h5>
+                    </div>
+
+                    <div>
+                        <h5>budget: $150</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card" onclick="location.href={% url 'budget_list_two' %};">
+                <div class="icon">
+                    <h2 class="untitled">Untitled 2</h2>
+                    <img src="{% static '/images/arrow.png' %}" alt="" class="arrow">
+                </div>
+                <div class="sub-text">
+                    <div>
+                        <h5>Access List</h5>
+                    </div>
+
+                    <div>
+                        <h5>budget: $150</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card" onclick="location.href={% url 'budget_list_three' %};">
+                <div class="icon">
+                    <h2 class="untitled">Untitled 3</h2>
+                    <img src="{% static '/images/arrow.png' %}" alt="" class="arrow">
+                </div>
+                <div class="sub-text">
+                    <div>
+                        <h5>Access List</h5>
+                    </div>
+
+                    <div>
+                        <h5>budget: $150</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column2">
+            <div id="sub-title">
+                <h2>Untitled 1</h2>
+                <img src="{% static '/images/pen.png' %}" alt="">
+            </div>
+
+            <div id="add-item">
+                <!-- <img src="./addicon.png" alt="plus sign icon" id="add-icon"> -->
+                <input type="text" placeholder=" + add an item" id="add">
+            </div>
+
+            <div class="second-level">
+                <div class="field">
+                    <h4 class="your">your estimated budget</h4>
+                    <h4 class="money"> $150 .00</h4>
+                </div>
+
+
+                <div class="field2">
+                    <div>
+                        <h4 class="your">total amount</h4>
+                    </div>
+                    <div>
+                        <h4 class="money"> $0 .00</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main content -->
+            <div class="content">
+                <div class="level1">
+                    <div id="separate">
+                        <div id="check"></div>
+                        Almond Milk
+                    </div>
+                    <div style="text-align: right;">$3.99</div>
+                </div>
+
+                <div class="level2">
+                    <div class="color"> 2 buying options below $9</div>
+                    <div>
+                        <span> - </span>
+                        2
+                        <span> + </span>
+                    </div>
+                </div>
+
+                <div class="level3">
+                    <div>
+                        <img src="{% static '/images/Group 35.png' %}" alt="" id="image">
+                        <img src="{% static 'images/Group 36.png' %}" alt="" id="image">
+                    </div>
+                    <a href="#">
+                        delete
+                    </a>
+                </div>
+
+                <hr>
+
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script>
+        /* function openFirst(){
+            var element = document.getElementById("first");
+            element.style.display = "block";
+            var element2 = document.getElementById("second");
+            element2.classList.display = "none";
+            var element3 = document.getElementById("third");
+            element3.classList.display = "none";
+        }
+            
+        function openSecond(){
+            var element = document.getElementById("second");
+            element.style.display = "block";
+            var element2 = document.getElementById("first");
+            element2.classList.display = "none";
+            var element3 = document.getElementById("third");
+            element3.classList.display = "none";
+        }
+
+        function openThird(){
+            var element = document.getElementById("third");
+            element.style.display = "block";
+            var element2 = document.getElementById("first");
+            element2.classList.display = "none";
+            var element3 = document.getElementById("second");
+            element3.classList.display = "none";
+        } */
+    </script>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'features/main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="{% static '/css/trivia_rules.css' %}">
+
+    <div class="content">
+        <div class="welcome">
+            Welcome To Target Trivia!
+        </div>
+        <div class="chance">
+            Stand a chance to win bi-weekly discounts
+        </div>
+        <div class="read_text">
+            PLEASE READ TEXT BELOW BEFORE PARTICIPATING
+        </div>
+        <div class="rules">
+            Target Trivia is a way Target chooses to give back to it’s customers. Through this Trivia, you stand a chance of winning discounts on a bi-weekly basis. Discounts can be applied on checkout. 
+        </br></br>
+            There are no costs to enter this Trivia and all you have to do is input your phone number and answer a certain percentage of the questions you receive via SMS correctly to win.  Different discounts are distributed randomly.
+        </div>
+        <a href="{% url 'trivia' %}" class="agree">
+            I UNDERSTAND
+        </a>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'features/main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="{% static '/css/trivia_rules.css' %}">
+    
+    <div class="content">
+        <div class="welcome">
+            Target Trivia!
+        </div>
+        <div class="chance">
+            Stand a chance to win bi-weekly discounts
+        </div>
+        <div class="discount">
+            <img src="{% static '/images/discounts.png' %}" alt="">
+        </div>
+        <div class="number">
+            <div class="ask"> Phone Number </div>
+            <input type="text" name="" placeholder="Enter Phone Number">
+        </div>
+        <a href="#" class="agree">
+            PLAY
+        </a>
+    </div>
+
+{% endblock %}

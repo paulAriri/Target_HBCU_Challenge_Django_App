@@ -1,6 +1,10 @@
 
 *{
-    font-family: Cursive;
+    font-family: helvetica, Cursive;
+    font-weight: bold;
+}
+.navbar{
+    font-size: 15px;
     font-weight: bold;
 }
 .navbar-custom {

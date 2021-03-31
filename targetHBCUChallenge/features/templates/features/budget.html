@@ -1,0 +1,28 @@
+{% extends 'features/main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="{% static '/css/budget.css/' %}">
+
+    <div class="page">
+        <div class="welcome_message">Welcome to Target Budget!</div>
+
+        <div class="content">
+            <div class="estimate">Put in your estimated budget to begin</div>
+            <div class="inline">
+                <div class="currency">
+                    $
+                </div>
+                <div>
+                    <input type="text" placeholder="0.00" class="amount">
+                </div>
+            </div>
+            <div class="submit" onclick="location.href={% url 'budget_list_one' %};">
+                <a href="{% url 'budget_list_one' %}" class="continue">CONTINUE</button>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

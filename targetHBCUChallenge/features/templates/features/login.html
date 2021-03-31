@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="{% static '/css/login.css' %}" />
+</head>
+
+
+
+<body>
+	<div class="loginbox">
+	<img src="{% static '/images/head.png' %}" class="avatar" />
+		<h1>Login Here</h1>
+		<form>
+			<p>Username</p>
+			<input type="text" name="" placeholder="Enter Username">
+			<p>Password</p>
+			<input type="password" name="" placeholder="Enter Password">
+			<input type="submit" name="" value="Login">
+			<a href="{% url 'register' %}">Don't Have An Account? Register</a><br />		
+		
+	</div>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
