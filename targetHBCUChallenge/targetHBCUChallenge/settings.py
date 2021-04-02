@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'eb=g7dx6s94f2q)*zc1!(1ji05q(*b)4du7u&(ff4)&6w1-6g5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['target-save-hbcu.herokuapp.com', '127.0.0.1']
 
 
 # Application definition

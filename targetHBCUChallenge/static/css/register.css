@@ -9,7 +9,7 @@ body {
 
 .loginbox {
 	width:320px;
-	height:500px;
+	height:550px;
 	background: #111;
 	color:#fff;
 	top:50%;
@@ -52,7 +52,7 @@ h1 {
 	margin-bottom:20px;
 }
 
-.loginbox input[type="text"], input[type="password"] {
+.loginbox input[type="text"], input[type="email"], input[type="password"] {
 	border:none;
 	border-bottom:1px solid #fff;
 	background:transparent;

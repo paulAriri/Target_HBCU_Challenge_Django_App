@@ -57,10 +57,10 @@
         </form>
         <ul class="nav navbar-nav navbar-right" style="padding-left: 30px">
         <li>
-            <a class="nav-link active" aria-current="page" href="#">[ Guest ]<!--<img src="{% static '/images/login1.png' %}" alt="">--></a>
+            <a class="nav-link active" aria-current="page" href="#">Hello, {{request.user}}<!--<img src="{% static '/images/login1.png' %}" alt="">--></a>
         </li>
         <li>
-            <a class="nav-link active" aria-current="page" href="{% url 'login' %}"><img src="{% static '/images/logout.png' %}" alt=""></a>
+            <a class="nav-link active" aria-current="page" href="{% url 'logout' %}"><img src="{% static '/images/logout.png' %}" alt=""></a>
         </li>
         </ul>
         </div>

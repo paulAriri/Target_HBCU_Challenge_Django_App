@@ -14,12 +14,18 @@
 	<div class="loginbox">
 	<img src="{% static '/images/head.png' %}" class="avatar" />
 		<h1>Login Here</h1>
-		<form>
+		<form method="POST" action="">
+			{% csrf_token %}
 			<p>Username</p>
-			<input type="text" name="" placeholder="Enter Username">
+			<input type="text" name="username" placeholder="Enter Username">
 			<p>Password</p>
-			<input type="password" name="" placeholder="Enter Password">
+			<input type="password" name="password" placeholder="Enter Password">
 			<input type="submit" name="" value="Login">
+		</form>
+
+		{% for message in messages %}
+			<p id = "msg">{{message}}</p>
+		{% endfor %}
 			<a href="{% url 'register' %}">Don't Have An Account? Register</a><br />		
 		
 	</div>
